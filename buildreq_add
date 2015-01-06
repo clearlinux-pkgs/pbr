@@ -1,0 +1,22 @@
+# This file contains additional build requirements that did not get
+# picked up automatically. One name per line, no whitespace.
+pip
+testrepository
+testresources
+testscenarios
+testtools
+subunit
+extras
+coverage
+flake8
+discover
+python-mock
+Sphinx
+discover
+fixtures
+hacking
+six
+pep8
+docutils
+Jinja2
+MarkupSafe
