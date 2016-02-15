@@ -4,7 +4,7 @@
 #
 Name     : pbr
 Version  : 1.8.1
-Release  : 21
+Release  : 22
 URL      : https://pypi.python.org/packages/source/p/pbr/pbr-1.8.1.tar.gz
 Source0  : https://pypi.python.org/packages/source/p/pbr/pbr-1.8.1.tar.gz
 Summary  : Python Build Reasonableness
