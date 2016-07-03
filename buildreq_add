@@ -21,3 +21,4 @@ docutils
 Jinja2
 MarkupSafe
 Babel
+wheel
