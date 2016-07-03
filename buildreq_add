@@ -20,3 +20,4 @@ pep8
 docutils
 Jinja2
 MarkupSafe
+Babel

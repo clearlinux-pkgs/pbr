@@ -1,6 +1,56 @@
 CHANGES
 =======
 
+1.10.0
+------
+
+* File is wrongly marked as executable
+* Fix wsgiref script use with oslo.config
+* Update Preversioning explanation to avoid double that
+
+1.9.1
+-----
+
+* Handle IndexError during version string parsing
+* Correct server test
+
+1.9.0
+-----
+
+* Updated from global requirements
+* Fix soabi tests with pypy
+* package: fix wrong catch in email parsing
+* Do not convert git tags when searching history
+* Include wsgi_scripts in generated wheels
+* Correct the indentation in the classifiers example
+* Do not silently drop markers that fail to evaluate
+* Clarifications around tags and version numbers
+* Correct typo - s/enabeld/enabled/
+* Use apt-cache generated packages to provide build deps
+* fix some variable names
+* Don't attempt to test with 0.6c11 with Py3
+* Support entry point patching on setuptools < 12
+* Updated from global requirements
+* Split changelog on nulls instead of (
+* Add libjpeg and liberasurecode for tests
+* Handle markers to support sdist on pip < 6
+* Deprecated tox -downloadcache option removed
+* passenv integration environment variables re-enabling integration tests
+* Enable pep8 H405 tests
+* Add patch to properly get all commands from dist
+* doc: Remove 'MANIFEST.in'
+* doc: Trivial cleanup of 'index.rst'
+* doc: Add deprecation note for 'requirements-pyN'
+* doc: Restructure 'Requirements' section
+* doc: Restructure 'Usage' section
+* doc: Add details of manifest generation
+* Support git://, git+ssh://, git+https:// without -e flag
+* More support Sphinx >=1.3b1 and <1.3.1
+* Fix docs for markers
+* Do not error when running pep8 with py3
+* Ensure changelog log output is written if it already exists
+* Cleanup jeepyb and pypi-mirror special casing
+
 1.8.1
 -----
 
@@ -61,11 +111,12 @@ CHANGES
 -----
 
 * Strip markers from test requirements
+* Add build_sphinx test coverage
 
 1.1.1
 -----
 
-* Revert "Remove sphinx_config.init_values(
+* Revert "Remove sphinx_config.init_values() manual call"
 
 1.1.0
 -----
@@ -486,7 +537,7 @@ CHANGES
 * Adds six.py and makes the necessary tweaks to improve support for using d2to1 natively across Python versions
 * Fix 'except as' statements that were breaking things in Python 2.5
 * Somehow neglected to include extra-file.txt used in the test for #15. Also moved the info log message that was causing othere tests to fail to only appear when commands are run that actually affect the manifest generation
-* Adds support for the tests_require keyword from setuptools. Tested by eating our own dogfood -- ./setup.py test now works for d2to1's own setup
+* Adds support for the tests_require keyword from setuptools.  Tested by eating our own dogfood -- ./setup.py test now works for d2to1's own setup
 * support test suite and test tests-require
 * Patch manifest_maker to support extra_files--this is really the only way I can see to do this at all sensibly
 * This is a test that should really work to test this feature
@@ -649,7 +700,7 @@ CHANGES
 * reog from import merge
 * Rajaram/Vinkesh|Default xmlns for extension serialization can be overriden, added default factory for extension middleware
 * Rajaram/Vinkesh | Copied tests for wsgi from nova. Added default content/accept types in Request which can be overridden by projects. Copied tests for XML serialization of Extension Controller's action from nova
-* Rajaram/Vinkesh | Fixed the extension bug where custom collection actions' routes in resource extension were not getting registered
+* Rajaram/Vinkesh | Fixed the extension bug where custom collection actions' routes  in resource extension were not getting registered
 * Vinkesh/Rajaram|Added nova's extension framework into common and tests for it
 * Rajaram|renamed AppBaseException to OpenstackException and app_config_dir_name to config_dir as per jaypipes' feedback
 * Rajaram/Vinkesh | Removed references to Glance in code
