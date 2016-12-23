@@ -4,7 +4,7 @@
 #
 Name     : pbr
 Version  : 1.10.0
-Release  : 29
+Release  : 30
 URL      : http://pypi.debian.net/pbr/pbr-1.10.0.tar.gz
 Source0  : http://pypi.debian.net/pbr/pbr-1.10.0.tar.gz
 Summary  : Python Build Reasonableness
@@ -16,13 +16,14 @@ BuildRequires : Babel
 BuildRequires : Jinja2
 BuildRequires : MarkupSafe
 BuildRequires : Sphinx
+BuildRequires : configparser-python
 BuildRequires : coverage
 BuildRequires : discover
 BuildRequires : docutils
+BuildRequires : enum34-python
 BuildRequires : extras
 BuildRequires : fixtures
 BuildRequires : flake8
-BuildRequires : funcsigs-python
 BuildRequires : hacking
 BuildRequires : imagesize-python
 BuildRequires : pbr
@@ -39,7 +40,6 @@ BuildRequires : testrepository
 BuildRequires : testresources
 BuildRequires : testscenarios
 BuildRequires : testtools
-BuildRequires : virtualenv-python
 BuildRequires : wheel
 
 %description
