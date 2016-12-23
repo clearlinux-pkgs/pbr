@@ -4,7 +4,7 @@
 #
 Name     : pbr
 Version  : 1.10.0
-Release  : 28
+Release  : 29
 URL      : http://pypi.debian.net/pbr/pbr-1.10.0.tar.gz
 Source0  : http://pypi.debian.net/pbr/pbr-1.10.0.tar.gz
 Summary  : Python Build Reasonableness
