@@ -4,7 +4,7 @@
 #
 Name     : pbr
 Version  : 1.10.0
-Release  : 32
+Release  : 33
 URL      : http://pypi.debian.net/pbr/pbr-1.10.0.tar.gz
 Source0  : http://pypi.debian.net/pbr/pbr-1.10.0.tar.gz
 Summary  : Python Build Reasonableness
@@ -20,19 +20,16 @@ BuildRequires : configparser-python
 BuildRequires : coverage
 BuildRequires : discover
 BuildRequires : docutils
-BuildRequires : enum34-python
 BuildRequires : extras
 BuildRequires : fixtures
 BuildRequires : flake8
 BuildRequires : hacking
-BuildRequires : imagesize-python
 BuildRequires : pbr
 BuildRequires : pep8
 BuildRequires : pip
 BuildRequires : python-dev
 BuildRequires : python-mock
 BuildRequires : python3-dev
-BuildRequires : pytz-python
 BuildRequires : setuptools
 BuildRequires : six
 BuildRequires : subunit
@@ -70,6 +67,7 @@ python components for the pbr package.
 
 %build
 export LANG=C
+export SOURCE_DATE_EPOCH=1489025220
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
@@ -79,9 +77,10 @@ export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 py.test-2.7 --verbose py2 || :
 %install
+export SOURCE_DATE_EPOCH=1489025220
 rm -rf %{buildroot}
-python2 -tt setup.py build -b py2 install --root=%{buildroot}
-python3 -tt setup.py build -b py3 install --root=%{buildroot}
+python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
+python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
 
 %files
 %defattr(-,root,root,-)
