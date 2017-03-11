@@ -1,6 +1,45 @@
 CHANGES
 =======
 
+2.0.0
+-----
+
+* tox: Don't set skipsdist=True
+* Stop using 'warnerrors'
+* doc: Clarify sections in 'setup.cfg'
+* Updated from global requirements
+* Remove discover from test-requirements
+* Add Constraints support
+* Don't raise exception on missing man pages
+* Updated from global requirements
+* Clean imports in code
+* Updated from global requirements
+* Docstrings should not start with a space
+* Changed the home-page link
+* Update .coveragerc after the removal of openstack directory
+* coverage package name option, doc improvement
+* Updated from global requirements
+* Deprecated warning for SafeConfigParser
+* Add more words to a confusing error message
+* Don't ignore data-files
+* Change assertTrue(isinstance()) by optimal assert
+* Fix handling of old git log output
+* Fix typo in the index.rst
+* Expose deb version to match exposing rpm version
+* Replace OpenStack LLC with OpenStack Foundation
+* Updated from global requirements
+* Fix pypy soabi tests
+* Add Python 3.5 classifier and venv
+* Fix argument order for assertEqual to (expected, observed)
+* Move to oslosphinx
+* Updated from global requirements
+* Restore warnerrors behavior and support Sphinx 1.4
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+* Fix pypy wsgi tests
+* Remember the insertion order for pbr.json
+
 1.10.0
 ------
 
@@ -20,6 +59,7 @@ CHANGES
 * Updated from global requirements
 * Fix soabi tests with pypy
 * package: fix wrong catch in email parsing
+* Sort 'pbr freeze' output
 * Do not convert git tags when searching history
 * Include wsgi_scripts in generated wheels
 * Correct the indentation in the classifiers example
