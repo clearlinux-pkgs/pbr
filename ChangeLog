@@ -1,12 +1,22 @@
 CHANGES
 =======
 
+2.1.0
+-----
+
+* Lazy import pkg_resources
+* Initialize sphinx config using application instead of config
+* Updated from global requirements
+* Also generate XML coverage report
+* Update to a newer hacking library
+
 2.0.0
 -----
 
 * tox: Don't set skipsdist=True
 * Stop using 'warnerrors'
 * doc: Clarify sections in 'setup.cfg'
+* Remove testr entry point
 * Updated from global requirements
 * Remove discover from test-requirements
 * Add Constraints support
