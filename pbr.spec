@@ -4,7 +4,7 @@
 #
 Name     : pbr
 Version  : 3.0.0
-Release  : 37
+Release  : 38
 URL      : https://pypi.debian.net/pbr/pbr-3.0.0.tar.gz
 Source0  : https://pypi.debian.net/pbr/pbr-3.0.0.tar.gz
 Summary  : Python Build Reasonableness
