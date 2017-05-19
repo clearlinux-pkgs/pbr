@@ -1,6 +1,14 @@
 CHANGES
 =======
 
+3.0.1
+-----
+
+* builddoc: uses the new Sphinx 1.6 code for multiple builder
+* Updated from global requirements
+* Fix missing comment from previous change
+* trivial: Add note about multiple builders support
+
 3.0.0
 -----
 
@@ -17,6 +25,7 @@ CHANGES
 * Lazy import pkg\_resources
 * Add Changelog build handling for invalid chars
 * Initialize sphinx config using application instead of config
+* Make oslosphinx optional
 * Updated from global requirements
 * Also generate XML coverage report
 * Update to a newer hacking library
