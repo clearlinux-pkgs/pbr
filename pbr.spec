@@ -4,7 +4,7 @@
 #
 Name     : pbr
 Version  : 3.1.1
-Release  : 41
+Release  : 42
 URL      : https://pypi.debian.net/pbr/pbr-3.1.1.tar.gz
 Source0  : https://pypi.debian.net/pbr/pbr-3.1.1.tar.gz
 Summary  : Python Build Reasonableness
@@ -12,6 +12,8 @@ Group    : Development/Tools
 License  : Apache-2.0 BSD-3-Clause
 Requires: pbr-bin
 Requires: pbr-python
+BuildRequires : configparser-python
+BuildRequires : enum34-python
 BuildRequires : pbr
 BuildRequires : pip
 BuildRequires : python-dev
@@ -19,11 +21,7 @@ BuildRequires : python3-dev
 BuildRequires : setuptools
 
 %description
-Introduction
 ============
-.. image:: https://img.shields.io/pypi/v/pbr.svg
-:target: https://pypi.python.org/pypi/pbr/
-:alt: Latest Version
 
 %package bin
 Summary: bin components for the pbr package.
@@ -49,7 +47,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1498041676
+export SOURCE_DATE_EPOCH=1503071774
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
@@ -59,7 +57,7 @@ export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 py.test-2.7 --verbose py2 || :
 %install
-export SOURCE_DATE_EPOCH=1498041676
+export SOURCE_DATE_EPOCH=1503071774
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
