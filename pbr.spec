@@ -4,16 +4,15 @@
 #
 Name     : pbr
 Version  : 3.1.1
-Release  : 43
+Release  : 44
 URL      : https://pypi.debian.net/pbr/pbr-3.1.1.tar.gz
 Source0  : https://pypi.debian.net/pbr/pbr-3.1.1.tar.gz
 Summary  : Python Build Reasonableness
 Group    : Development/Tools
 License  : Apache-2.0 BSD-3-Clause
 Requires: pbr-bin
+Requires: pbr-legacypython
 Requires: pbr-python
-BuildRequires : configparser-python
-BuildRequires : enum34-python
 BuildRequires : pbr
 BuildRequires : pip
 BuildRequires : python-dev
@@ -31,9 +30,18 @@ Group: Binaries
 bin components for the pbr package.
 
 
+%package legacypython
+Summary: legacypython components for the pbr package.
+Group: Default
+
+%description legacypython
+legacypython components for the pbr package.
+
+
 %package python
 Summary: python components for the pbr package.
 Group: Default
+Requires: pbr-legacypython
 
 %description python
 python components for the pbr package.
@@ -47,7 +55,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1503155083
+export SOURCE_DATE_EPOCH=1505003764
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
@@ -57,7 +65,7 @@ export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 py.test-2.7 --verbose py2 || :
 %install
-export SOURCE_DATE_EPOCH=1503155083
+export SOURCE_DATE_EPOCH=1505003764
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
@@ -72,7 +80,10 @@ echo ----[ mark ]----
 %defattr(-,root,root,-)
 /usr/bin/pbr
 
-%files python
+%files legacypython
 %defattr(-,root,root,-)
 /usr/lib/python2*/*
+
+%files python
+%defattr(-,root,root,-)
 /usr/lib/python3*/*
