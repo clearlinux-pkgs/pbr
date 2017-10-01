@@ -4,7 +4,7 @@
 #
 Name     : pbr
 Version  : 3.1.1
-Release  : 46
+Release  : 47
 URL      : https://pypi.debian.net/pbr/pbr-3.1.1.tar.gz
 Source0  : https://pypi.debian.net/pbr/pbr-3.1.1.tar.gz
 Summary  : Python Build Reasonableness
@@ -12,6 +12,7 @@ Group    : Development/Tools
 License  : Apache-2.0 BSD-3-Clause
 Requires: pbr-bin
 Requires: pbr-legacypython
+Requires: pbr-python3
 Requires: pbr-python
 BuildRequires : pbr
 BuildRequires : pip
@@ -42,9 +43,18 @@ legacypython components for the pbr package.
 Summary: python components for the pbr package.
 Group: Default
 Requires: pbr-legacypython
+Requires: pbr-python3
 
 %description python
 python components for the pbr package.
+
+
+%package python3
+Summary: python3 components for the pbr package.
+Group: Default
+
+%description python3
+python3 components for the pbr package.
 
 
 %prep
@@ -55,7 +65,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1505365676
+export SOURCE_DATE_EPOCH=1506869283
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
@@ -65,7 +75,7 @@ export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 py.test-2.7 --verbose py2 || :
 %install
-export SOURCE_DATE_EPOCH=1505365676
+export SOURCE_DATE_EPOCH=1506869283
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
@@ -85,5 +95,8 @@ echo ----[ mark ]----
 /usr/lib/python2*/*
 
 %files python
+%defattr(-,root,root,-)
+
+%files python3
 %defattr(-,root,root,-)
 /usr/lib/python3*/*
