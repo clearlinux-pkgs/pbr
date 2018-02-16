@@ -1,5 +1,5 @@
 PKG_NAME := pbr
-URL := https://pypi.debian.net/pbr/pbr-3.1.1.tar.gz
-
+URL = https://pypi.debian.net/pbr/pbr-3.1.1.tar.gz
+ARCHIVES = 
 
 include ../common/Makefile.common
