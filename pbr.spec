@@ -4,14 +4,13 @@
 #
 Name     : pbr
 Version  : 3.1.1
-Release  : 53
+Release  : 54
 URL      : https://pypi.debian.net/pbr/pbr-3.1.1.tar.gz
 Source0  : https://pypi.debian.net/pbr/pbr-3.1.1.tar.gz
 Summary  : Python Build Reasonableness
 Group    : Development/Tools
 License  : Apache-2.0 BSD-3-Clause
 Requires: pbr-bin
-Requires: pbr-legacypython
 Requires: pbr-python3
 Requires: pbr-python
 BuildRequires : pbr
@@ -66,7 +65,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1518746018
+export SOURCE_DATE_EPOCH=1519358630
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
@@ -76,7 +75,7 @@ export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 py.test-2.7 --verbose py2 || :
 %install
-export SOURCE_DATE_EPOCH=1518746018
+export SOURCE_DATE_EPOCH=1519358630
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
