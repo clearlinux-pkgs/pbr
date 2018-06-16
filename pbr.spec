@@ -4,7 +4,7 @@
 #
 Name     : pbr
 Version  : 3.1.1
-Release  : 58
+Release  : 59
 URL      : https://pypi.debian.net/pbr/pbr-3.1.1.tar.gz
 Source0  : https://pypi.debian.net/pbr/pbr-3.1.1.tar.gz
 Summary  : Python Build Reasonableness
@@ -12,10 +12,10 @@ Group    : Development/Tools
 License  : Apache-2.0 BSD-3-Clause
 Requires: pbr-bin
 Requires: pbr-python3
+Requires: pbr-license
 Requires: pbr-python
 BuildRequires : pbr
 BuildRequires : pip
-
 BuildRequires : python3-dev
 BuildRequires : setuptools
 
@@ -25,18 +25,18 @@ BuildRequires : setuptools
 %package bin
 Summary: bin components for the pbr package.
 Group: Binaries
+Requires: pbr-license
 
 %description bin
 bin components for the pbr package.
 
 
-%package legacypython
-Summary: legacypython components for the pbr package.
+%package license
+Summary: license components for the pbr package.
 Group: Default
-Requires: python-core
 
-%description legacypython
-legacypython components for the pbr package.
+%description license
+license components for the pbr package.
 
 
 %package python
@@ -65,8 +65,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1519358630
-python2 setup.py build -b py2
+export SOURCE_DATE_EPOCH=1529115705
 python3 setup.py build -b py3
 
 %check
@@ -75,10 +74,11 @@ export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 py.test-2.7 --verbose py2 || :
 %install
-export SOURCE_DATE_EPOCH=1519358630
 rm -rf %{buildroot}
-python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
-python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
+mkdir -p %{buildroot}/usr/share/doc/pbr
+cp LICENSE %{buildroot}/usr/share/doc/pbr/LICENSE
+cp pbr/tests/testpackage/LICENSE.txt %{buildroot}/usr/share/doc/pbr/pbr_tests_testpackage_LICENSE.txt
+python3 -tt setup.py build -b py3 install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
 echo ----[ mark ]----
@@ -90,9 +90,10 @@ echo ----[ mark ]----
 %defattr(-,root,root,-)
 /usr/bin/pbr
 
-%files legacypython
+%files license
 %defattr(-,root,root,-)
-/usr/lib/python2*/*
+/usr/share/doc/pbr/LICENSE
+/usr/share/doc/pbr/pbr_tests_testpackage_LICENSE.txt
 
 %files python
 %defattr(-,root,root,-)
