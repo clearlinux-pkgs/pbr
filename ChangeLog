@@ -1,10 +1,95 @@
 CHANGES
 =======
 
+4.1.1
+-----
+
+* trivial: Fix file permissions
+* trivial: Remove 'tools/releasenotes\_tox.sh'
+* Add docstring from LocalManifestMaker.add\_defaults
+
+4.1.0
+-----
+
+* Update python3 versions in tox.ini envlist
+* fix tox python3 overrides
+* Support python-requires metadata
+
+4.0.4
+-----
+
+* Revert "Remove win32/nt checks for wrapper script gen"
+* Add leading 0 on alpha release in semver doc
+
+4.0.3
+-----
+
+* Don't poke in pip for requests
+* Fix builddoc with sphinx <= 1.6
+
+4.0.2
+-----
+
+
+4.0.1
+-----
+
+* add lower-constraints job
+* Explicitly read setup.cfg as utf-8 on Python 3
+
+4.0.0
+-----
+
+* builddoc: Treat '[pbr] autodoc\_tree\_excludes' as a multi-line opt
+* update parse test to use reliable comparison
+* Better Sem-Ver header handling
+* Make docs on env vars a little clearer
+* Updated from global requirements
+* Updated from global requirements
+* future-proof invocation of apidoc
+* emit warning correctly
+* Updated from global requirements
+* deprecations: Deprecate support for '-py{N}' requirements
+* doc: Minor rework of usage doc
+* doc: Rework features doc
+* Support v<semver> version
+* Deprecate testr and nose integration
+* tests: Increase coverage of requirements parsing
+* trivial: Move packaging tests to test\_packaging
+* Put test-requirements into an extra named 'test'
+* Support Description-Content-Type metadata
+* Avoid tox\_install.sh for constraints support
+* Test on Python 3.6
+* Support PEP 345 Project-URL metadata
+* Remove setting of version/release from releasenotes
+* Updated from global requirements
+* Use 'build\_reno' setuptools extension if available
+* Remove unnecessary 'if True'
+* Discover Distribution through the class hierarchy
+* Add reno for release notes management
+* Remove support for command hooks
+* Remove dead code
+* Deprecate support for Sphinx < 1.6
+* builddoc: Use '[sphinx\_build] builders' with Sphinx < 1.6
+* Remove win32/nt checks for wrapper script gen
+* Updated from global requirements
+* Remove py26 support
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+* Update URLs in documents according to document migration
+* Updated from global requirements
+* gitignore: Ignore .venv
+* switch from oslosphinx to openstackdocstheme
+* Trivial: Fix docstring
+* turn on warning-as-error flag for doc build
+* rearrange existing documentation using the new standard layout
+
 3.1.1
 -----
 
 * Restore previous IP binding
+* docs: Don't specify pbr version in 'setup.py'
 
 3.1.0
 -----
