@@ -1,6 +1,16 @@
 CHANGES
 =======
 
+4.2.0
+-----
+
+* Deprecate 'test' integration
+* Deprecate 'build\_sphinx' integration
+* Add Sphinx extension
+* doc: Add documentation for missing '[pbr]' options
+* doc: Fix formatting of packagers guide
+* Switch to stestr
+
 4.1.1
 -----
 
