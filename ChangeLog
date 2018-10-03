@@ -1,6 +1,22 @@
 CHANGES
 =======
 
+4.3.0
+-----
+
+* Remove my\_ip from generated wsgi script
+* Fix typo in contribution instructions
+* Add release note for fix to bug 1786306
+* Move pbr-installation jobs in-tree
+* Support subdirectory in the url
+* remove pypy jobs
+* add lib-forward-testing-python3 test job
+* add python 3.6 unit test job
+* switch documentation job to new PTI
+* import zuul job settings from project-config
+* Ignore Zuul when generating AUTHORS
+* tox: Re-add cover target
+
 4.2.0
 -----
 
