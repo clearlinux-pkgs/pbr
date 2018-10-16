@@ -2,7 +2,6 @@
 Babel
 Cheetah
 ConfigArgParse
-Flask
 Jinja2
 Mako
 Markdown
@@ -10,10 +9,8 @@ MarkupSafe
 MySQL-python
 Paste
 PasteDeploy
-Pillow
 Pint
 PyJWT
-PyMySQL
 PyWavelets
 Pygments
 QtAwesome
@@ -24,8 +21,6 @@ Send2Trash
 SocksiPy-branch
 Tempita
 WSME
-WebOb
-WebTest
 Werkzeug
 Whoosh
 XStatic-Angular
@@ -49,10 +44,8 @@ XStatic-mdi
 XStatic-roboto-fontface
 XStatic-smart-table
 XStatic-term.js
-Z3
 aeon
 aioeventlet
-alabaster
 alembic
 amqp
 anyjson
@@ -87,7 +80,6 @@ cffi
 chardet
 chrome-gnome-shell
 cinder
-clamav
 cliff
 cloudpickle
 colorama
@@ -115,7 +107,6 @@ discover
 django-appconf
 django-babel
 django-discover-runner
-django-nose
 django-pyscss
 django_compressor
 dnspython
@@ -171,7 +162,6 @@ isort
 itsdangerous
 itstool
 jaraco.functools
-jedi
 jmespath
 josepy
 jsonpatch
@@ -182,9 +172,7 @@ jupyter
 jupyter-nbgallery
 jupyter-notebook-gist
 jupyter_client
-jupyter_console
 jupyter_core
-kata-qemu-lite
 kazoo
 keystone
 keystoneauth1
@@ -201,9 +189,6 @@ logilab-common
 logutils
 mccabe
 microversion_parse
-mido
-mistune
-mkosi
 mod_wsgi
 mongodict
 monotonic
@@ -268,7 +253,6 @@ oslosphinx
 oslotest
 osprofiler
 ovsdbapp
-packaging
 pandocfilters
 parsedatetime
 parso
@@ -281,7 +265,6 @@ pecan
 pep8
 pika
 pika-pool
-pip
 pip-legacy
 portend
 positional
@@ -301,13 +284,11 @@ pycodestyle
 pydot
 pydot_ng
 pydotplus
-pymongo
 pypandoc
 pypowervm
 pyquery
 pyrfc3339
 pyrsistent
-pyserial
 python-Levenshtein
 python-augeas
 python-barbicanclient
@@ -364,7 +345,6 @@ ryu
 s3transfer
 sahara
 scikit-build
-scikit-image
 scipy
 scripttest
 semantic_version
@@ -379,7 +359,6 @@ smartcols
 snowballstemmer
 sos
 sphinx-feature-classification
-sphinx_rtd_theme
 sphinxcontrib-apidoc
 sphinxcontrib-httpdomain
 sphinxcontrib-newsfeed
@@ -396,7 +375,6 @@ sure
 suricata
 swift
 taskflow
-tbb
 tempest-lib
 tempora
 tenacity
@@ -437,10 +415,8 @@ yum-metadata-parser
 zake
 zope.component
 zope.event
-zope.exceptions
 zope.hookable
 zope.i18nmessageid
 zope.interface
 zope.location
-zope.testing
 zope.testrunner

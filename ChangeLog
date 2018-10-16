@@ -1,10 +1,20 @@
 CHANGES
 =======
 
+5.0.0
+-----
+
+* Use templates for cover and lower-constraints
+* Special case long\_description\_content\_type
+* tox: Suppress output
+* Support wheel 0.32.0+
+
 4.3.0
 -----
 
 * Remove my\_ip from generated wsgi script
+* docs: Add docs for reno integration
+* Skip test for testr hook being installed when testr is not available
 * Fix typo in contribution instructions
 * Add release note for fix to bug 1786306
 * Move pbr-installation jobs in-tree
@@ -15,6 +25,7 @@ CHANGES
 * switch documentation job to new PTI
 * import zuul job settings from project-config
 * Ignore Zuul when generating AUTHORS
+* packaging: Remove support for pyN requirement files
 * tox: Re-add cover target
 
 4.2.0
