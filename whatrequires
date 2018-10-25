@@ -1,12 +1,10 @@
 # This file contains recursive sources that require this package
 Babel
-Cheetah
 ConfigArgParse
 Jinja2
 Mako
 Markdown
 MarkupSafe
-MySQL-python
 Paste
 PasteDeploy
 Pint
@@ -46,7 +44,6 @@ XStatic-smart-table
 XStatic-term.js
 aeon
 aioeventlet
-alembic
 amqp
 anyjson
 apipkg
@@ -82,7 +79,6 @@ chrome-gnome-shell
 cinder
 cliff
 cloudpickle
-colorama
 comedilib
 compat-libwebp-soname6
 compat-llvm-soname4
@@ -127,7 +123,6 @@ fasteners
 fixtures
 flake8-polyfill
 funcsigs
-futures
 futurist
 gabbi
 gast
@@ -203,7 +198,6 @@ mpmath
 nbformat
 ndg_httpsclient
 neon
-net-snmp
 netaddr
 neutron
 neutron-lib
@@ -214,7 +208,6 @@ nose-cover3
 nose-parameterized
 nova
 numba
-numpy
 numpydoc
 oauthlib
 offlineimap
@@ -342,7 +335,6 @@ rjsmin
 rsa
 rtslib-fb
 ryu
-s3transfer
 sahara
 scikit-build
 scipy
@@ -368,7 +360,6 @@ sqlparse
 statsmodels
 stestr
 stevedore
-subunit
 subunit2sql
 suds-jurko
 sure
@@ -396,7 +387,6 @@ unbundle
 unicodecsv
 unittest2
 uritemplate
-urlgrabber
 urllib3
 uwsgi
 vcversioner

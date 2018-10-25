@@ -1,6 +1,10 @@
 CHANGES
 =======
 
+5.1.0
+-----
+
+
 5.0.0
 -----
 
@@ -13,6 +17,7 @@ CHANGES
 -----
 
 * Remove my\_ip from generated wsgi script
+* Add an option to skip generating RELEASENOTES.rst
 * docs: Add docs for reno integration
 * Skip test for testr hook being installed when testr is not available
 * Fix typo in contribution instructions
