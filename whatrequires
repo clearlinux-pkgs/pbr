@@ -313,7 +313,6 @@ python-systemd
 python-troveclient
 python-urwid
 python-zaqarclient
-pytz
 pyudev
 pywbem
 pyxdg
