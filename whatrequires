@@ -5,7 +5,6 @@ Jinja2
 Mako
 Markdown
 MarkupSafe
-Paste
 PasteDeploy
 Pint
 PyJWT
@@ -14,7 +13,6 @@ Pygments
 QtAwesome
 QtPy
 Routes
-SDL2_image
 Send2Trash
 SocksiPy-branch
 Tempita
@@ -61,7 +59,6 @@ bazel
 bcrypt
 bind-utils
 bkcharts
-bleach
 bmap-tools
 bokeh
 boto
@@ -110,7 +107,6 @@ doc8
 docker-py
 dockerpy-creds
 docutils
-dogpile.cache
 dogpile.core
 dogtail
 ecdsa
@@ -138,7 +134,6 @@ hacking
 heat
 hgtools
 horizon
-html5lib
 httplib2
 httpretty
 i2c-tools
@@ -155,10 +150,7 @@ iso8601
 isodate
 isort
 itsdangerous
-itstool
-jaraco.functools
 jmespath
-josepy
 jsonpatch
 jsonpath-rw-ext
 jsonpointer
@@ -173,7 +165,6 @@ keystone
 keystoneauth1
 keystonemiddleware
 kiwisolver
-lazy-object-proxy
 libarchive-c
 libpwquality
 librabbitmq
@@ -208,7 +199,6 @@ nose-cover3
 nose-parameterized
 nova
 numba
-numpydoc
 oauthlib
 offlineimap
 openstackdocstheme
@@ -251,7 +241,6 @@ parsedatetime
 parso
 passlib
 pathlib
-patsy
 pbr
 pbr-legacy
 pecan
@@ -323,7 +312,6 @@ redis
 reno
 repoze.lru
 repoze.who
-requests
 requests-mock
 requestsexceptions
 restructuredtext_lint
@@ -335,7 +323,6 @@ rsa
 rtslib-fb
 ryu
 sahara
-scikit-build
 scipy
 scripttest
 semantic_version
@@ -366,7 +353,6 @@ suricata
 swift
 taskflow
 tempest-lib
-tempora
 tenacity
 tensorboard
 termcolor
@@ -391,7 +377,6 @@ uwsgi
 vcversioner
 vine
 virt-manager
-virtualenv
 waitress
 warlock
 wcwidth

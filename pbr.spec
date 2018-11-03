@@ -4,7 +4,7 @@
 #
 Name     : pbr
 Version  : 5.1.0
-Release  : 71
+Release  : 72
 URL      : https://files.pythonhosted.org/packages/64/2b/fe0c782f57a6c979a5b8c9d405885ceec5b03105caa5587bdf82affb8bf7/pbr-5.1.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/64/2b/fe0c782f57a6c979a5b8c9d405885ceec5b03105caa5587bdf82affb8bf7/pbr-5.1.0.tar.gz
 Summary  : Python Build Reasonableness
@@ -66,7 +66,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1540471237
+export SOURCE_DATE_EPOCH=1541271448
 python3 setup.py build
 
 %check
