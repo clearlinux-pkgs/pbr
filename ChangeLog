@@ -1,6 +1,12 @@
 CHANGES
 =======
 
+5.1.1
+-----
+
+* Fix incorrect use of flake8:noqa
+* Correct documentation hyperlink for environment-markers
+
 5.1.0
 -----
 

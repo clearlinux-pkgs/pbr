@@ -64,7 +64,6 @@ bokeh
 boto
 bz2file
 cached-property
-cachetools
 case
 castellan
 ceilometer
@@ -253,9 +252,7 @@ positional
 posix_ipc
 pretend
 prettytable
-psycopg2
 ptyprocess
-pyOpenSSL
 pyScss
 pyaml
 pyasn1
@@ -306,12 +303,9 @@ pyudev
 pywbem
 pyxdg
 qpid-python
-qtwebengine
 rcssmin
 redis
 reno
-repoze.lru
-repoze.who
 requests-mock
 requestsexceptions
 restructuredtext_lint
@@ -338,8 +332,6 @@ snowballstemmer
 sos
 sphinx-feature-classification
 sphinxcontrib-apidoc
-sphinxcontrib-httpdomain
-sphinxcontrib-newsfeed
 sphinxcontrib-websupport
 sqlalchemy-migrate
 sqlparse
@@ -364,7 +356,6 @@ testtools
 tflearn
 tooz
 traceback2
-traitlets
 trollius
 typed-ast
 tzlocal
@@ -377,7 +368,6 @@ uwsgi
 vcversioner
 vine
 virt-manager
-waitress
 warlock
 wcwidth
 webcolors
@@ -387,10 +377,6 @@ wrapt
 yasm
 yum-metadata-parser
 zake
-zope.component
 zope.event
-zope.hookable
-zope.i18nmessageid
 zope.interface
-zope.location
 zope.testrunner
