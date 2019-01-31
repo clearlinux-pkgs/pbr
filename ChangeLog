@@ -1,6 +1,13 @@
 CHANGES
 =======
 
+5.1.2
+-----
+
+* Ignore --find-links in requirements file
+* Do not globally replace path prefix
+* Change openstack-dev to openstack-discuss
+
 5.1.1
 -----
 
