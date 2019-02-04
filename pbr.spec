@@ -4,7 +4,7 @@
 #
 Name     : pbr
 Version  : 5.1.2
-Release  : 76
+Release  : 77
 URL      : https://files.pythonhosted.org/packages/4e/cc/691ba51448695510978855c07753344ca27af1d881a05f03b56dd8087570/pbr-5.1.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/4e/cc/691ba51448695510978855c07753344ca27af1d881a05f03b56dd8087570/pbr-5.1.2.tar.gz
 Summary  : Python Build Reasonableness
@@ -14,7 +14,6 @@ Requires: pbr-bin = %{version}-%{release}
 Requires: pbr-license = %{version}-%{release}
 Requires: pbr-python = %{version}-%{release}
 Requires: pbr-python3 = %{version}-%{release}
-Requires: openstackdocstheme
 Requires: reno
 BuildRequires : buildreq-distutils3
 BuildRequires : pbr
@@ -69,7 +68,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1549303126
+export SOURCE_DATE_EPOCH=1549303305
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
