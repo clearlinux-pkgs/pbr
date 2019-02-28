@@ -1,6 +1,5 @@
 # This file contains recursive sources that require this package
 Babel
-ConfigArgParse
 Jinja2
 Mako
 Markdown
@@ -9,10 +8,8 @@ Pint
 PyWavelets
 Pygments
 Send2Trash
-SocksiPy-branch
 Tempita
 WSME
-Werkzeug
 Whoosh
 XStatic-Angular
 XStatic-Angular-Bootstrap
@@ -40,7 +37,6 @@ aioeventlet
 apipkg
 appdirs
 asn1crypto
-astunparse
 automaton
 backcall
 backports.ssl_match_hostname
@@ -53,12 +49,11 @@ bmap-tools
 bokeh
 boto
 bz2file
-case
 castellan
 ceilometer
 ceph
-cffi
 chardet
+check-manifest
 chrome-gnome-shell
 cinder
 cliff
@@ -87,13 +82,8 @@ django-discover-runner
 django-pyscss
 django_compressor
 doc8
-docker-py
-dockerpy-creds
-docutils
 dogpile.core
 dogtail
-empy
-entrypoints
 enum34
 execnet
 extras
@@ -122,13 +112,11 @@ ironic
 ironic-lib
 iso8601
 isodate
-isort
 jmespath
 jsonpath-rw-ext
 jsonpointer
 jsonschema
 jupyter
-jupyter-nbgallery
 jupyter-notebook-gist
 jupyter_core
 keystone
@@ -151,10 +139,8 @@ mozjs
 mozjs38
 mozjs52
 mozjs60
-mpi4py
 nbformat
 ndg_httpsclient
-neon
 netaddr
 neutron
 neutron-lib
@@ -219,7 +205,6 @@ ptyprocess
 pyScss
 pyaml
 pycadf
-pycodestyle
 pydot_ng
 pydotplus
 pypandoc
@@ -282,7 +267,7 @@ snowballstemmer
 sos
 sphinx-feature-classification
 sphinxcontrib-apidoc
-sphinxcontrib-websupport
+sphinxcontrib-spelling
 sqlalchemy-migrate
 sqlparse
 statsmodels
@@ -290,7 +275,6 @@ stestr
 stevedore
 subunit2sql
 suds-jurko
-sure
 swift
 taskflow
 tempest-lib
@@ -314,7 +298,6 @@ urllib3
 uwsgi
 vcversioner
 vine
-warlock
 wcwidth
 webcolors
 webencodings
@@ -323,6 +306,4 @@ wrapt
 yasm
 yum-metadata-parser
 zake
-zope.event
-zope.interface
 zope.testrunner
