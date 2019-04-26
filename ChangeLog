@@ -1,10 +1,22 @@
 CHANGES
 =======
 
+5.2.0
+-----
+
+* OpenDev Migration Patch
+* Typo fix: s/extract\_mesages/extract\_messages/
+* Support provides\_extra metadata
+* Replace openstack.org git:// URLs with https://
+* Fix nits and typos on release note message
+* Remove libzmq-dev from integration.sh package install
+* Fix error when keywords are defined as a list in cfg
+
 5.1.3
 -----
 
 * Resolve \`\`ValueError\`\` when mapping value contains a literal \`\`=\`\`
+* Change openstack-dev to openstack-discuss
 
 5.1.2
 -----
