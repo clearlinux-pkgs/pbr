@@ -1,6 +1,15 @@
 CHANGES
 =======
 
+5.2.1
+-----
+
+* Add openstack-tox-py37 job
+* Set subparser argument required
+* Remove neutron-lbaas
+* Update Sphinx requirement
+* Fix white space handling in file names
+
 5.2.0
 -----
 

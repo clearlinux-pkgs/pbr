@@ -1,8 +1,6 @@
 # This file contains recursive sources that require this package
 PasteDeploy
 Pint
-PyWavelets
-Send2Trash
 WSME
 XStatic-Angular
 XStatic-Angular-Bootstrap
@@ -38,14 +36,11 @@ bashate
 bazel
 bkcharts
 bmap-tools
-bokeh
 boto
 bz2file
 castellan
 ceilometer
 ceph
-check-manifest
-chrome-gnome-shell
 cinder
 cliff
 comedilib
@@ -63,7 +58,6 @@ cycler
 ddt
 deap
 debtcollector
-defusedxml
 deprecated-linecache2
 deprecated-python-mock
 deprecated-testscenarios
@@ -247,7 +241,6 @@ sphinx-feature-classification
 sphinxcontrib-apidoc
 sphinxcontrib-spelling
 sqlalchemy-migrate
-sqlparse
 statsmodels
 stestr
 stevedore
@@ -266,7 +259,6 @@ testtools
 tflearn
 tooz
 traceback2
-trollius
 tzlocal
 unicodecsv
 uritemplate
