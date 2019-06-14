@@ -1,6 +1,15 @@
 CHANGES
 =======
 
+5.3.0
+-----
+
+* Stop using pbr sphinx integration
+* Switch to release.o.o for constraints
+* Make WSGI tests listen on localhost
+* Allow git-tags to be SemVer compliant
+* Read description file as utf-8
+
 5.2.1
 -----
 

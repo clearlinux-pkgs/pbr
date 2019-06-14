@@ -219,13 +219,11 @@ python-urwid
 python-zaqarclient
 pyudev
 pywbem
-pyxdg
 rcssmin
 reno
 requests-mock
 requestsexceptions
 retry
-retype
 rjsmin
 rsa
 ryu
@@ -248,6 +246,7 @@ subunit2sql
 suds-jurko
 swift
 taskflow
+tempest
 tempest-lib
 tenacity
 tensorboard
