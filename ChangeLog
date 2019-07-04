@@ -1,6 +1,11 @@
 CHANGES
 =======
 
+5.4.0
+-----
+
+* option to print only the version of a package
+
 5.3.1
 -----
 

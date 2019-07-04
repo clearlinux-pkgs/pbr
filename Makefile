@@ -1,5 +1,5 @@
 PKG_NAME := pbr
-URL = https://files.pythonhosted.org/packages/a3/5b/c0aecb9523b4f9961e0edea791926f5e544379e0765867048e51fb8e72c7/pbr-5.3.1.tar.gz
+URL = https://files.pythonhosted.org/packages/a4/f4/e0bc4f0310465df47da56df4bd4d46907e62fc430f9afccd69644e150d52/pbr-5.4.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
