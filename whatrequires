@@ -67,7 +67,6 @@ discover
 django-babel
 django-discover-runner
 django-pyscss
-django_compressor
 doc8
 dogpile.core
 dogtail
@@ -104,6 +103,7 @@ keystone
 keystoneauth1
 keystonemiddleware
 kiwisolver
+koji
 libarchive-c
 libpwquality
 librabbitmq
@@ -224,7 +224,6 @@ reno
 requests-mock
 requestsexceptions
 retry
-rjsmin
 rsa
 ryu
 sahara
