@@ -1,9 +1,15 @@
 CHANGES
 =======
 
+5.4.2
+-----
+
+* Add Python 3 Train unit tests
+
 5.4.1
 -----
 
+* Fix parsing on egg names with dashes from git URLs
 
 5.4.0
 -----

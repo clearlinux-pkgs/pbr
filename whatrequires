@@ -183,7 +183,6 @@ ptyprocess
 pyScss
 pyaml
 pycadf
-pydot_ng
 pydotplus
 pypandoc
 pypowervm
