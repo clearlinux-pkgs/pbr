@@ -1,6 +1,10 @@
 CHANGES
 =======
 
+5.4.3
+-----
+
+
 5.4.2
 -----
 
@@ -38,6 +42,7 @@ CHANGES
 * Set subparser argument required
 * Remove neutron-lbaas
 * Install more dependencies for integration testing
+* Use more verbose logging for test failure
 * Update Sphinx requirement
 * Fix white space handling in file names
 

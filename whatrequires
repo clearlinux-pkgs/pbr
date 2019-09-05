@@ -23,7 +23,6 @@ XStatic-mdi
 XStatic-roboto-fontface
 XStatic-smart-table
 XStatic-term.js
-aeon
 aioeventlet
 apipkg
 appdirs
@@ -95,7 +94,6 @@ iso8601
 isodate
 jsonpath-rw-ext
 jsonpointer
-jsonschema
 jupyter
 jupyter-notebook-gist
 jupyter_core
@@ -117,7 +115,6 @@ monotonic
 mox
 mox3
 mozjs
-mozjs38
 mozjs52
 mozjs60
 nbformat
@@ -227,7 +224,6 @@ rsa
 ryu
 sahara
 scripttest
-semantic_version
 setuptools-legacy
 setuptools_scm_git_archive
 simplegeneric
@@ -246,7 +242,6 @@ swift
 taskflow
 tempest
 tempest-lib
-tenacity
 tensorboard
 termcolor
 testrepository
@@ -260,7 +255,6 @@ tzlocal
 unicodecsv
 uritemplate
 urllib3
-uwsgi
 vcversioner
 vine
 wcwidth
