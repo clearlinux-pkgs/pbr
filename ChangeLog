@@ -1,6 +1,13 @@
 CHANGES
 =======
 
+5.4.4
+-----
+
+* trivial: Use 'open' context manager
+* Update to latest hacking
+* Mark strings as raw
+
 5.4.3
 -----
 
