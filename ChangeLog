@@ -1,6 +1,25 @@
 CHANGES
 =======
 
+5.5.0
+-----
+
+* Remove bdist\_wininst support
+* Increase integration test timeout
+* Add Release Notes to documentation
+* Cleanup old legacy devstack-gate jobs
+* Begin work to modernize pbr's integration testing
+* Re-add ChangeLog
+* Update some url to use opendev.org
+* Support newer openstackdocstheme
+* Use easy\_install.ScriptWriter.get\_header()
+* Remove neutron-fwaas from the jobs' required project
+* Update python requires packaging metadata for package
+* trivial: Improve logging of run commands
+* Map requires-python to python-requires
+* Update hacking
+* Add support for virtualenv 20.x
+
 5.4.5
 -----
 

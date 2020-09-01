@@ -19,7 +19,6 @@ gabbi
 glance_store
 gnocchiclient
 hacking
-heat
 ironic
 ironic-lib
 jsonpath-rw-ext
@@ -27,10 +26,10 @@ keystone
 keystoneauth1
 keystonemiddleware
 linecache2
+lockfile
 microversion_parse
 mox3
 mozjs
-mozjs52
 mozjs60
 mozjs68
 munch
@@ -97,7 +96,6 @@ python-senlinclient
 python-swiftclient
 python-troveclient
 python-zaqarclient
-pywbem
 reno
 requests-mock
 requestsexceptions
