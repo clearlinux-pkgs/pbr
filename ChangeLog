@@ -1,6 +1,13 @@
 CHANGES
 =======
 
+5.5.1
+-----
+
+* Run tempest-full for stable/train
+* Remove use\_2to3 backward compat for Setuptools
+* More easy\_install.ScriptWriter.get\_header()
+
 5.5.0
 -----
 
