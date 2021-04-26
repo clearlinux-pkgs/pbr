@@ -5,12 +5,12 @@ boto
 ceph
 fixtures
 linecache2
-mozjs68
 mozjs78
 pbr
 pip-legacy
 python-mock
 requests-mock
+requests-unixsocket
 retry
 setuptools-legacy
 sphinx-feature-classification
@@ -22,4 +22,3 @@ testscenarios
 testtools
 traceback2
 urllib3
-yasm
