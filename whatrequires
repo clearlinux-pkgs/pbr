@@ -1,14 +1,17 @@
 # This file contains recursive sources that require this package
 amazon-efs-utils
+ansible
 bazel
 boto
 ceph
 fixtures
 linecache2
 mozjs78
+mozjs91
 pbr
 pip-legacy
 python-mock
+qstylizer
 requests-mock
 requests-unixsocket
 retry

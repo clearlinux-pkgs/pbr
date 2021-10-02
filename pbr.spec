@@ -4,7 +4,7 @@
 #
 Name     : pbr
 Version  : 5.6.0
-Release  : 107
+Release  : 108
 URL      : https://files.pythonhosted.org/packages/35/8c/69ed04ae31ad498c9bdea55766ed4c0c72de596e75ac0d70b58aa25e0acf/pbr-5.6.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/35/8c/69ed04ae31ad498c9bdea55766ed4c0c72de596e75ac0d70b58aa25e0acf/pbr-5.6.0.tar.gz
 Summary  : Python Build Reasonableness
@@ -14,8 +14,14 @@ Requires: pbr-bin = %{version}-%{release}
 Requires: pbr-license = %{version}-%{release}
 Requires: pbr-python = %{version}-%{release}
 Requires: pbr-python3 = %{version}-%{release}
+BuildRequires : Sphinx
 BuildRequires : buildreq-distutils3
 BuildRequires : pbr
+BuildRequires : pytest
+BuildRequires : python-mock
+BuildRequires : testresources
+BuildRequires : testscenarios
+BuildRequires : virtualenv
 
 %description
 ============
@@ -65,15 +71,15 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1619462995
+export SOURCE_DATE_EPOCH=1633197039
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
-export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
-export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
+export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=auto "
+export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=auto "
+export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=auto "
+export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=auto "
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
@@ -81,7 +87,7 @@ python3 setup.py build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
-py.test-2.7 --verbose py2 || :
+pytest || :
 %install
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
