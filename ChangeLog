@@ -1,6 +1,15 @@
 CHANGES
 =======
 
+5.7.0
+-----
+
+* Add a PEP517 interface
+* PBR package testing improvements
+* Run python3.9 test jobs
+* Retire django-openstack-auth
+* Correct comment for 'D1\_D2\_SETUP\_ARGS'
+
 5.6.0
 -----
 
