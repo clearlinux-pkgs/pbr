@@ -18,8 +18,6 @@ retry
 setuptools-legacy
 sphinx-feature-classification
 sphinxcontrib-apidoc
-tensorboard
-tensorflow-serving
 testresources
 testscenarios
 testtools
