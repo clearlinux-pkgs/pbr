@@ -4,7 +4,7 @@
 #
 Name     : pbr
 Version  : 5.8.0
-Release  : 113
+Release  : 114
 URL      : https://files.pythonhosted.org/packages/f5/0c/3fa7b1f9006e4d454a49b48eac995167cf8617e19375c6963a6b048af0d0/pbr-5.8.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/f5/0c/3fa7b1f9006e4d454a49b48eac995167cf8617e19375c6963a6b048af0d0/pbr-5.8.0.tar.gz
 Summary  : Python Build Reasonableness
